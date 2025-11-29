@@ -7,7 +7,7 @@ class Database {
     init() {
         // Initialiser les données si elles n'existent pas
         if (!localStorage.getItem('mvElShaddaiData')) {
-            const initialData = {
+            var initialData = {
                 destinations: [
                     {
                         id: 1,
@@ -267,4 +267,5 @@ class Database {
 }
 
 // Initialiser la base de données
+
 const db = new Database();
